@@ -15,6 +15,16 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
+    "baseUrl": "./src",
+    "paths": {
+      "bible": ["./bible.json"],
+      "mongoDatabase": ["./config/mongo.ts"],
+      "helmetConfig": ["./config/helmet.ts"],
+      "corsConfig": ["./config/cors.ts"],
+      "morganConfig": ["./config/morgan.ts"],
+      "staticConfig": ["./config/filesystem.ts"],
+      "routes": ["./routes/index.routes.ts"]
+    },
     "types": [
       "bun-types" // add Bun global
     ]
